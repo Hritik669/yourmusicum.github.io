@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    padding-top: 0px;
+    font-family: 'Tangerine', serif;
+    position: relative;
+    display: flex ;
+    height: 107px;
+    
+}
+
+#logo{
+    filter: opacity(50%);
+    margin: 0px 0px;
+}
+#logo img{
+    width: 80px;
+    margin: 10px 10px;
+}
+#navbar ::before{
+    content: "";
+    background-color: rgb(253, 166, 180);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+#navbar ul{
+    width: 873px;
+    height: 103px;
+    display: flex;
+}
+#navbar ul li{
+    padding: 0px;
+    list-style: none;
+    font-size: 1.9rem;
+}
+#navbar ul li a{
+    color: white;
+    width: 150px;
+    display: block;
+    padding: 10px 30px;
+    border-radius: 0px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(241, 128, 191);
+    background-color: white;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 109px 200px;
+    height: 524px;
+    justify-items: center;
+    align-items: center;
+}
+#bg{
+    background: url('../img/music1.jpg') no-repeat center center/cover  ;
+    height: 590px;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.89;
+} 
+#home h1{
+    font-family: 'Lexend Peta', sans-serif;
+    color: cadetblue;
+    text-align: center;
+}
+#home p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px;
+    size: 100px;
+    
+}
+#service{
+  
+    display: flex;
+}
+#service .box{
+    border: 3px solid rgb(248, 170, 255);
+    padding: 34px;
+    margin: 3px 12px;
+    border-radius: 24px;
+    background: rgb(255, 213, 220);
+}
+#service .box img {
+    margin: 5px 60px;
+    height: 280px;
+}
+
+#home button{                                       
+    font-family: 'Dancing Script', cursive;
+    color: rgb(253, 253, 253);
+    font-size: 1.6rem;
+    border: 2px solid rgb(233, 233, 233);
+    background-color: thistle;
+    padding: 3px 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+#home button:hover{
+    background-color: rgb(153, 60, 153);
+}
+#service .box p{
+    font-family: 'Bree Serif', serif;
+    color: rgb(70, 20, 70);
+}
+#service .box button{
+    justify-content: center;
+    border: 2px solid rgb(129, 93, 129);
+    border-radius: 4px;
+}
+/* client section */
+#clients{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 100px;
+}
+/* utility text */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+    padding: 12px;
+    text-align: center;
+    color: cadetblue;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size:18px;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
